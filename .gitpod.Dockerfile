@@ -11,8 +11,6 @@ RUN sudo apt-get update \
     && sudo ln -s /opt/tomcat/apache-tomcat-9.0.33 /opt/tomcat/latest \
     && sudo sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'
 
-COPY tomcat.service /etc/systemd/system/
-
 ENV LANG=en_US.UTF-8
 
 USER gitpod
